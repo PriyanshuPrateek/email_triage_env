@@ -1,0 +1,1956 @@
+[
+  {
+    "id": "email_001",
+    "subject": "Double charge on my account",
+    "body": "Hi, I noticed I was charged twice for my subscription this month. My account number is #45231. Please refund the extra charge immediately. This is very frustrating.",
+    "sender": "john.smith@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "refund",
+        "charge",
+        "account",
+        "apologize",
+        "resolve"
+      ]
+    }
+  },
+  {
+    "id": "email_002",
+    "subject": "Payment failed",
+    "body": "My payment keeps failing even though my card details are correct. I've tried 3 times now and keep getting an error. Order #78432 is pending.",
+    "sender": "sarah.jones@yahoo.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "payment",
+        "card",
+        "error",
+        "retry",
+        "help"
+      ]
+    }
+  },
+  {
+    "id": "email_003",
+    "subject": "Request for invoice",
+    "body": "Could you please send me the invoice for last month's services? I need it for my company's accounting department by end of week.",
+    "sender": "accounts@techcorp.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "invoice",
+        "send",
+        "attached",
+        "accounting"
+      ]
+    }
+  },
+  {
+    "id": "email_004",
+    "subject": "Subscription cancellation and refund",
+    "body": "I cancelled my subscription 2 weeks ago but was still charged this month. I want a full refund for this unauthorized charge. This is unacceptable.",
+    "sender": "angry.customer@hotmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "refund",
+        "cancelled",
+        "unauthorized",
+        "apologize",
+        "process"
+      ]
+    }
+  },
+  {
+    "id": "email_005",
+    "subject": "Upgrade plan billing question",
+    "body": "I recently upgraded from Basic to Pro plan. How will I be billed? Will I be charged the full amount or prorated for the remaining days?",
+    "sender": "curious.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "prorated",
+        "billing",
+        "upgrade",
+        "charge",
+        "plan"
+      ]
+    }
+  },
+  {
+    "id": "email_006",
+    "subject": "Wrong amount charged",
+    "body": "I was charged $99 but my plan is only $49/month. This is a clear error. Please correct this immediately and refund the difference.",
+    "sender": "mike.brown@outlook.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "refund",
+        "difference",
+        "error",
+        "correct",
+        "amount"
+      ]
+    }
+  },
+  {
+    "id": "email_007",
+    "subject": "Annual subscription discount",
+    "body": "I've been a customer for 3 years. Is there any annual plan discount available? I'd like to switch if the savings are significant.",
+    "sender": "loyal.customer@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "discount",
+        "annual",
+        "savings",
+        "plan",
+        "offer"
+      ]
+    }
+  },
+  {
+    "id": "email_008",
+    "subject": "Credit card expiry update",
+    "body": "My credit card is expiring next month. How do I update my payment details to avoid service interruption?",
+    "sender": "user123@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "update",
+        "payment",
+        "card",
+        "settings",
+        "account"
+      ]
+    }
+  },
+  {
+    "id": "email_009",
+    "subject": "Tax invoice needed for business",
+    "body": "I am a business customer and need a GST tax invoice for all payments made in the last financial year. Please send them to this email.",
+    "sender": "finance@smallbiz.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "invoice",
+        "tax",
+        "GST",
+        "send",
+        "financial"
+      ]
+    }
+  },
+  {
+    "id": "email_010",
+    "subject": "Free trial charge",
+    "body": "I signed up for a free trial but just got charged $29. I never agreed to any paid subscription. I demand an immediate refund.",
+    "sender": "upset.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "refund",
+        "trial",
+        "charge",
+        "apologize",
+        "unauthorized"
+      ]
+    }
+  },
+  {
+    "id": "email_011",
+    "subject": "Payment receipt not received",
+    "body": "I made a payment 3 days ago but haven't received a confirmation email or receipt. Can you please resend it?",
+    "sender": "waiting.user@yahoo.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "receipt",
+        "confirmation",
+        "resend",
+        "payment",
+        "email"
+      ]
+    }
+  },
+  {
+    "id": "email_012",
+    "subject": "Dispute transaction",
+    "body": "There is a transaction on my account from your company that I do not recognize. The amount is $150 dated last Tuesday. Please investigate this immediately.",
+    "sender": "fraud.concern@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "investigate",
+        "transaction",
+        "dispute",
+        "security",
+        "verify"
+      ]
+    }
+  },
+  {
+    "id": "email_013",
+    "subject": "How to pause subscription",
+    "body": "I'm going on vacation for 2 months. Can I pause my subscription instead of cancelling? I don't want to lose my data.",
+    "sender": "traveler@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "pause",
+        "subscription",
+        "data",
+        "option",
+        "resume"
+      ]
+    }
+  },
+  {
+    "id": "email_014",
+    "subject": "Referral credit not applied",
+    "body": "I referred 3 friends last month and was promised $30 credit per referral. None of the $90 credit has appeared on my account yet.",
+    "sender": "referral.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "credit",
+        "referral",
+        "apply",
+        "account",
+        "investigate"
+      ]
+    }
+  },
+  {
+    "id": "email_015",
+    "subject": "Charged after cancellation",
+    "body": "I cancelled on the 5th and was charged on the 6th. I want this reversed. I have a screenshot of my cancellation confirmation.",
+    "sender": "cancelled.user@hotmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "refund",
+        "cancelled",
+        "reversed",
+        "apologize",
+        "verify"
+      ]
+    }
+  },
+  {
+    "id": "email_016",
+    "subject": "Bulk purchase pricing",
+    "body": "We are a company looking to purchase 50 licenses. Do you offer volume discounts? Please send me a quote.",
+    "sender": "procurement@enterprise.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "volume",
+        "discount",
+        "quote",
+        "licenses",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "id": "email_017",
+    "subject": "Monthly bill seems too high",
+    "body": "My bill this month is $20 more than usual. I haven't changed my plan. Can you explain what the extra charges are for?",
+    "sender": "confused.customer@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "explain",
+        "charge",
+        "breakdown",
+        "bill",
+        "review"
+      ]
+    }
+  },
+  {
+    "id": "email_018",
+    "subject": "Downgrade plan request",
+    "body": "I want to downgrade from Pro to Basic plan. When will this take effect and will I get a partial refund for the remaining Pro period?",
+    "sender": "budget.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "downgrade",
+        "refund",
+        "effective",
+        "basic",
+        "prorated"
+      ]
+    }
+  },
+  {
+    "id": "email_019",
+    "subject": "PayPal payment option",
+    "body": "Do you accept PayPal? I don't feel comfortable entering my credit card online. I'd prefer to pay via PayPal if possible.",
+    "sender": "paypal.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "PayPal",
+        "payment",
+        "option",
+        "accept",
+        "method"
+      ]
+    }
+  },
+  {
+    "id": "email_020",
+    "subject": "Failed payment - account suspended",
+    "body": "My account has been suspended due to a failed payment but my bank says the charge went through. Please restore my account immediately.",
+    "sender": "suspended.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "restore",
+        "account",
+        "payment",
+        "verify",
+        "suspend"
+      ]
+    }
+  },
+  {
+    "id": "email_021",
+    "subject": "Student discount availability",
+    "body": "I'm a university student. Do you offer student discounts? I have a valid .edu email address I can verify with.",
+    "sender": "student@university.edu",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "student",
+        "discount",
+        "verify",
+        "edu",
+        "offer"
+      ]
+    }
+  },
+  {
+    "id": "email_022",
+    "subject": "Bank declined transaction",
+    "body": "My bank keeps declining the transaction even though I have sufficient funds. Is there a problem on your payment gateway end?",
+    "sender": "payment.issue@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "gateway",
+        "declined",
+        "bank",
+        "contact",
+        "alternative"
+      ]
+    }
+  },
+  {
+    "id": "email_023",
+    "subject": "Nonprofit pricing",
+    "body": "We are a registered nonprofit organization. Do you have special pricing for nonprofits? We're interested in the Enterprise plan.",
+    "sender": "director@nonprofit.org",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "nonprofit",
+        "pricing",
+        "special",
+        "discount",
+        "enterprise"
+      ]
+    }
+  },
+  {
+    "id": "email_024",
+    "subject": "Change billing date",
+    "body": "My billing date is the 1st but my salary arrives on the 15th. Can I change my billing cycle to the 16th of each month?",
+    "sender": "billing.date@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "billing",
+        "date",
+        "change",
+        "cycle",
+        "update"
+      ]
+    }
+  },
+  {
+    "id": "email_025",
+    "subject": "Currency conversion charges",
+    "body": "I'm being charged in USD but I'm in the UK. Am I being charged extra for currency conversion? Why can't I pay in GBP?",
+    "sender": "uk.user@gmail.com",
+    "ground_truth": {
+      "category": "billing",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "currency",
+        "GBP",
+        "USD",
+        "conversion",
+        "option"
+      ]
+    }
+  },
+  {
+    "id": "email_026",
+    "subject": "App keeps crashing on login",
+    "body": "Every time I try to log in the app crashes. I've tried reinstalling twice. Using iPhone 14, iOS 17. This has been happening for 3 days.",
+    "sender": "app.crash@icloud.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "crash",
+        "login",
+        "bug",
+        "fix",
+        "investigate",
+        "version"
+      ]
+    }
+  },
+  {
+    "id": "email_027",
+    "subject": "Cannot reset password",
+    "body": "I requested a password reset email but never received it. I've checked spam. It's been 2 hours. I need access to my account highly.",
+    "sender": "locked.out@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "password",
+        "reset",
+        "email",
+        "verify",
+        "access"
+      ]
+    }
+  },
+  {
+    "id": "email_028",
+    "subject": "Data export not working",
+    "body": "I'm trying to export my data to CSV but the download keeps failing at 80%. I need this data for a presentation tomorrow.",
+    "sender": "data.export@company.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "export",
+        "CSV",
+        "download",
+        "bug",
+        "workaround"
+      ]
+    }
+  },
+  {
+    "id": "email_029",
+    "subject": "API rate limit issue",
+    "body": "We're hitting rate limits on your API at only 100 requests/minute but our plan allows 1000. Something seems wrong with our account configuration.",
+    "sender": "dev@startup.io",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "rate",
+        "limit",
+        "API",
+        "configure",
+        "account",
+        "increase"
+      ]
+    }
+  },
+  {
+    "id": "email_030",
+    "subject": "Integration with Slack not working",
+    "body": "I connected my account to Slack but notifications aren't coming through. I've disconnected and reconnected 3 times. Still broken.",
+    "sender": "slack.user@company.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "Slack",
+        "integration",
+        "notification",
+        "reconnect",
+        "settings"
+      ]
+    }
+  },
+  {
+    "id": "email_031",
+    "subject": "Website extremely slow",
+    "body": "Your website is loading in 15+ seconds for me. This has been happening since yesterday. My internet is fine \u2014 other sites load instantly.",
+    "sender": "slow.site@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "slow",
+        "loading",
+        "performance",
+        "server",
+        "investigate"
+      ]
+    }
+  },
+  {
+    "id": "email_032",
+    "subject": "Two-factor authentication locked me out",
+    "body": "I lost my phone and now 2FA is locking me out of my account. I have my backup codes but they aren't working. Please help.",
+    "sender": "locked2fa@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "2FA",
+        "locked",
+        "verify",
+        "identity",
+        "access",
+        "restore"
+      ]
+    }
+  },
+  {
+    "id": "email_033",
+    "subject": "File upload size limit",
+    "body": "I'm trying to upload a 500MB file but keep getting an error saying limit exceeded. The documentation says 1GB is allowed on my plan.",
+    "sender": "upload.issue@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "upload",
+        "limit",
+        "size",
+        "file",
+        "plan",
+        "increase"
+      ]
+    }
+  },
+  {
+    "id": "email_034",
+    "subject": "Browser extension not working on Firefox",
+    "body": "Your Chrome extension works fine but the Firefox version keeps throwing errors. Console shows: TypeError undefined is not a function.",
+    "sender": "firefox.user@proton.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "Firefox",
+        "extension",
+        "bug",
+        "error",
+        "fix",
+        "workaround"
+      ]
+    }
+  },
+  {
+    "id": "email_035",
+    "subject": "SSO login not working for company",
+    "body": "We set up SSO with our company's Azure AD but employees can't log in. Getting error: 'SAML assertion invalid'. Our IT team has verified the configuration.",
+    "sender": "it@enterprise.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "SSO",
+        "SAML",
+        "Azure",
+        "configure",
+        "escalate",
+        "fix"
+      ]
+    }
+  },
+  {
+    "id": "email_036",
+    "subject": "Mobile app not syncing",
+    "body": "My data on mobile app is 2 days behind what's on the web version. Force syncing doesn't help. Android 13, app version 4.2.1.",
+    "sender": "sync.issue@android.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "sync",
+        "mobile",
+        "update",
+        "version",
+        "fix"
+      ]
+    }
+  },
+  {
+    "id": "email_037",
+    "subject": "Dark mode not saving preference",
+    "body": "Every time I log out and back in, dark mode resets to light mode. I've changed this setting 10 times. It won't stick.",
+    "sender": "darkmode@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "dark mode",
+        "preference",
+        "save",
+        "settings",
+        "bug"
+      ]
+    }
+  },
+  {
+    "id": "email_038",
+    "subject": "Webhook not firing",
+    "body": "I've set up a webhook for order completion events but it stopped firing 3 days ago. Checked the endpoint \u2014 it's working fine on our end.",
+    "sender": "dev.ops@company.io",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "webhook",
+        "event",
+        "endpoint",
+        "logs",
+        "debug",
+        "fire"
+      ]
+    }
+  },
+  {
+    "id": "email_039",
+    "subject": "Search feature not returning results",
+    "body": "The search bar returns 0 results for everything now. Even searching my own name shows nothing. This worked fine last week.",
+    "sender": "search.broken@yahoo.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "search",
+        "results",
+        "bug",
+        "index",
+        "investigate"
+      ]
+    }
+  },
+  {
+    "id": "email_040",
+    "subject": "Email notifications going to spam",
+    "body": "All your notification emails end up in my spam folder. I've marked them as not spam multiple times but it keeps happening.",
+    "sender": "spam.filter@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "spam",
+        "notification",
+        "whitelist",
+        "email",
+        "filter"
+      ]
+    }
+  },
+  {
+    "id": "email_041",
+    "subject": "Cannot delete account",
+    "body": "I want to delete my account but the delete button on the settings page does nothing when I click it. No error, nothing happens.",
+    "sender": "delete.acc@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "delete",
+        "account",
+        "button",
+        "settings",
+        "bug",
+        "process"
+      ]
+    }
+  },
+  {
+    "id": "email_042",
+    "subject": "Keyboard shortcut conflict",
+    "body": "Your app's Ctrl+S shortcut conflicts with my system's screenshot tool. Is there a way to remap or disable shortcuts?",
+    "sender": "shortcut.user@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "shortcut",
+        "remap",
+        "keyboard",
+        "customize",
+        "settings"
+      ]
+    }
+  },
+  {
+    "id": "email_043",
+    "subject": "Database connection timeout",
+    "body": "Our enterprise installation keeps throwing database connection timeout errors during peak hours (9-11am). Affecting 200 users.",
+    "sender": "admin@enterprise.org",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "database",
+        "timeout",
+        "connection",
+        "enterprise",
+        "peak",
+        "fix"
+      ]
+    }
+  },
+  {
+    "id": "email_044",
+    "subject": "Image compression quality too low",
+    "body": "When I upload high-res images they get compressed too aggressively. The output quality is unusable for print. Is there a way to disable compression?",
+    "sender": "designer@studio.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "compression",
+        "image",
+        "quality",
+        "settings",
+        "disable"
+      ]
+    }
+  },
+  {
+    "id": "email_045",
+    "subject": "API documentation error",
+    "body": "The API docs say the endpoint is POST /api/v2/users but it's actually /api/v3/users. This wasted hours of our developer's time.",
+    "sender": "frustrated.dev@startup.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "documentation",
+        "API",
+        "error",
+        "update",
+        "apologize",
+        "correct"
+      ]
+    }
+  },
+  {
+    "id": "email_046",
+    "subject": "Print layout broken",
+    "body": "When printing reports from your app, the layout breaks and cuts off the right side. This happens in both Chrome and Safari.",
+    "sender": "print.issue@company.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "print",
+        "layout",
+        "fix",
+        "browser",
+        "CSS",
+        "workaround"
+      ]
+    }
+  },
+  {
+    "id": "email_047",
+    "subject": "Timezone showing wrong time",
+    "body": "All scheduled events show in UTC even though I set my timezone to IST. I've updated it in settings 3 times. Still showing UTC.",
+    "sender": "india.user@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "timezone",
+        "IST",
+        "UTC",
+        "settings",
+        "fix",
+        "update"
+      ]
+    }
+  },
+  {
+    "id": "email_048",
+    "subject": "Cannot connect to VPN and access app",
+    "body": "When connected to our company VPN I cannot access your web app at all. It works fine without VPN. Could be an IP whitelist issue?",
+    "sender": "vpn.user@corp.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "VPN",
+        "IP",
+        "whitelist",
+        "access",
+        "network",
+        "firewall"
+      ]
+    }
+  },
+  {
+    "id": "email_049",
+    "subject": "Language not changing to Japanese",
+    "body": "I changed the language to Japanese in settings but the app still shows in English. I've cleared cache, tried different browsers. Still English.",
+    "sender": "jp.user@gmail.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "language",
+        "Japanese",
+        "settings",
+        "localization",
+        "bug"
+      ]
+    }
+  },
+  {
+    "id": "email_050",
+    "subject": "Bulk import failing silently",
+    "body": "I'm trying to bulk import 5000 records via CSV. The import says successful but only 200 records appear. No error message shown.",
+    "sender": "data.import@company.com",
+    "ground_truth": {
+      "category": "technical",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "import",
+        "CSV",
+        "records",
+        "bug",
+        "investigate",
+        "limit"
+      ]
+    }
+  },
+  {
+    "id": "email_051",
+    "subject": "YOU HAVE WON $1,000,000!!!",
+    "body": "CONGRATULATIONS!!! You have been selected as our lucky winner. Click here immediately to claim your $1,000,000 prize. Limited time offer. ACT NOW!!!",
+    "sender": "prize@lucky-winner-2024.xyz",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "lottery scam",
+        "urgent language",
+        "clickbait",
+        "suspicious sender",
+        "financial lure"
+      ]
+    }
+  },
+  {
+    "id": "email_052",
+    "subject": "Enlarge your business profits NOW",
+    "body": "Make $5000 a day working from home! Our proven system has helped 10,000 people. No experience needed. Buy our course for just $9.99. Click here!",
+    "sender": "money@getrich-fast.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "get rich quick",
+        "unrealistic earnings",
+        "marketing spam",
+        "clickbait",
+        "suspicious domain"
+      ]
+    }
+  },
+  {
+    "id": "email_053",
+    "subject": "Your account has been compromised - verify now",
+    "body": "We detected suspicious activity on your account. Click the link below immediately to verify your identity or your account will be suspended in 24 hours.",
+    "sender": "security@accounts-verify-now.com",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "phishing",
+        "fake security alert",
+        "urgent action request",
+        "suspicious link",
+        "account threat"
+      ]
+    }
+  },
+  {
+    "id": "email_054",
+    "subject": "Hot singles in your area",
+    "body": "Thousands of singles are waiting to meet you! Join free today and find your perfect match. Photos available. Sign up now at our website.",
+    "sender": "dating@meet-singles-now.biz",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "adult content",
+        "unsolicited promotion",
+        "clickbait",
+        "suspicious website",
+        "mass marketing"
+      ]
+    }
+  },
+  {
+    "id": "email_055",
+    "subject": "Cheap medications - no prescription needed",
+    "body": "Buy medications online without a prescription! Lowest prices guaranteed. Discreet shipping. Viagra, Cialis and more. Order now and save 80%!",
+    "sender": "pharma@discount-pills-online.ru",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "illegal pharmacy",
+        "no prescription claim",
+        "medical scam",
+        "suspicious domain",
+        "discount lure"
+      ]
+    }
+  },
+  {
+    "id": "email_056",
+    "subject": "Investment opportunity - 300% returns guaranteed",
+    "body": "Exclusive crypto investment opportunity. Our AI trading bot guarantees 300% returns in 30 days. Invest just $500 today. Spots limited. Reply now.",
+    "sender": "invest@cryptoprofit-guaranteed.io",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "investment scam",
+        "guaranteed returns",
+        "unrealistic profit",
+        "crypto fraud",
+        "urgency marketing"
+      ]
+    }
+  },
+  {
+    "id": "email_057",
+    "subject": "Your package could not be delivered",
+    "body": "We attempted to deliver your package but nobody was home. Click the link to reschedule delivery and pay the $2.99 redelivery fee. Expires in 48hrs.",
+    "sender": "delivery@parcel-redeliver-now.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "phishing",
+        "fake delivery notice",
+        "payment request",
+        "suspicious link",
+        "urgency trigger"
+      ]
+    }
+  },
+  {
+    "id": "email_058",
+    "subject": "Lose 30 pounds in 30 days",
+    "body": "Doctors hate this one simple trick! Our miracle weight loss supplement will help you lose 30 pounds in just 30 days. No diet or exercise needed. Order now!",
+    "sender": "health@miracle-weight-loss.com",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "health scam",
+        "miracle claim",
+        "unrealistic results",
+        "clickbait",
+        "supplement marketing"
+      ]
+    }
+  },
+  {
+    "id": "email_059",
+    "subject": "Nigerian Prince needs your help",
+    "body": "I am Prince Emmanuel of Nigeria. I have $45 million USD that I need to transfer. I need your bank account details to complete the transfer. You will receive 30% commission.",
+    "sender": "prince.emmanuel@nigerian-transfer.com",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "advance fee scam",
+        "fake identity",
+        "money transfer fraud",
+        "bank details request",
+        "inheritance scam"
+      ]
+    }
+  },
+  {
+    "id": "email_060",
+    "subject": "IRS Notice: Outstanding tax debt",
+    "body": "high: You owe $4,823 in unpaid taxes. Failure to pay in 24 hours will result in arrest. Call our toll-free number immediately to avoid legal action.",
+    "sender": "irs-notice@tax-collection-dept.com",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "fake government notice",
+        "threat language",
+        "urgency pressure",
+        "tax scam",
+        "phone scam"
+      ]
+    }
+  },
+  {
+    "id": "email_061",
+    "subject": "Free iPhone 15 - Survey Complete",
+    "body": "You've been selected to receive a FREE iPhone 15! Just complete a 30-second survey and pay $4.99 shipping. Only 3 left! Claim yours before midnight.",
+    "sender": "rewards@free-iphone-claim.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "fake reward",
+        "survey scam",
+        "small fee trick",
+        "urgency marketing",
+        "clickbait offer"
+      ]
+    }
+  },
+  {
+    "id": "email_062",
+    "subject": "Exclusive business partnership",
+    "body": "Hello Business Owner, I have reviewed your company profile and believe we can generate $50,000/month together. No investment needed. Reply with your phone number.",
+    "sender": "business@exclusive-partner-deal.biz",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "business scam",
+        "unsolicited offer",
+        "unrealistic income",
+        "generic greeting",
+        "data collection request"
+      ]
+    }
+  },
+  {
+    "id": "email_063",
+    "subject": "Unsubscribe failed - last warning",
+    "body": "Your unsubscribe request failed. You will continue to receive emails. To stop emails you must verify your email by clicking the link below within 1 hour.",
+    "sender": "noreply@email-verify-unsubscribe.com",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "phishing",
+        "fake unsubscribe",
+        "email verification scam",
+        "urgency trigger",
+        "suspicious link"
+      ]
+    }
+  },
+  {
+    "id": "email_064",
+    "subject": "Your Google account needs attention",
+    "body": "We noticed unusual sign-in activity. Your account will be locked in 2 hours. Verify immediately at the link below: http://google-accounts-verify.xyz/login",
+    "sender": "security@google-accounts-verify.xyz",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "phishing",
+        "brand impersonation",
+        "fake login page",
+        "urgent security alert",
+        "malicious link"
+      ]
+    }
+  },
+  {
+    "id": "email_065",
+    "subject": "Work from home - $500/day",
+    "body": "We are hiring remote workers! Earn $500 per day doing simple data entry from home. No experience required. Apply now. Limited spots available!",
+    "sender": "jobs@work-from-home-500daily.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "job scam",
+        "unrealistic salary",
+        "work from home lure",
+        "no experience claim",
+        "mass hiring spam"
+      ]
+    }
+  },
+  {
+    "id": "email_066",
+    "subject": "Your computer has a virus",
+    "body": "WARNING: Our security scan detected 5 viruses on your computer. Call our Microsoft Certified technicians immediately at 1-800-XXX-XXXX to remove them before data loss.",
+    "sender": "alert@microsoft-security-scan.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "tech support scam",
+        "fake virus alert",
+        "fear tactic",
+        "phone scam",
+        "impersonation"
+      ]
+    }
+  },
+  {
+    "id": "email_067",
+    "subject": "Limited time: 90% off luxury watches",
+    "body": "Authentic Rolex, Patek Philippe at 90% discount! Only available this weekend. Ships from Switzerland. Order 2 get 1 free. Use code: LUXURY90",
+    "sender": "sales@luxury-watches-discount.shop",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "fake products",
+        "huge discount lure",
+        "luxury scam",
+        "limited time pressure",
+        "ecommerce fraud"
+      ]
+    }
+  },
+  {
+    "id": "email_068",
+    "subject": "Claim your Bitcoin inheritance",
+    "body": "You are listed as beneficiary for 2.5 Bitcoin worth $150,000. Previous owner deceased. Send $200 processing fee to release funds to your wallet.",
+    "sender": "legal@bitcoin-inheritance-claim.org",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "crypto scam",
+        "inheritance fraud",
+        "advance fee",
+        "financial deception",
+        "payment request"
+      ]
+    }
+  },
+  {
+    "id": "email_069",
+    "subject": "University degree in 2 weeks",
+    "body": "Get an accredited Bachelor's, Master's or PhD degree in just 2 weeks! Based on life experience. No classes needed. Impress employers. Call now!",
+    "sender": "admissions@fast-degree-university.edu.fake",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "fake education",
+        "degree scam",
+        "unrealistic timeline",
+        "credential fraud",
+        "misleading claims"
+      ]
+    }
+  },
+  {
+    "id": "email_070",
+    "subject": "Your survey reward is waiting",
+    "body": "You completed a survey 3 months ago and earned a $75 Amazon gift card. Click here within 24 hours to claim before it expires. Requires email verification.",
+    "sender": "rewards@survey-gift-claim.net",
+    "ground_truth": {
+      "category": "spam",
+      "priority": "low",
+      "action": "ignore",
+      "response_requirements": [
+        "fake reward",
+        "phishing",
+        "email verification trick",
+        "urgency pressure",
+        "gift card scam"
+      ]
+    }
+  },
+  {
+    "id": "email_071",
+    "subject": "Request for medical leave",
+    "body": "I am writing to request 2 weeks of medical leave starting next Monday. I have attached my doctor's certificate. Please let me know the process for approval.",
+    "sender": "employee.health@company.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "leave",
+        "medical",
+        "approve",
+        "HR",
+        "process",
+        "certificate"
+      ]
+    }
+  },
+  {
+    "id": "email_072",
+    "subject": "Harassment complaint",
+    "body": "I need to formally report repeated harassment by my team lead. This has been ongoing for 6 weeks. I have documented 12 incidents. I request an immediate investigation.",
+    "sender": "complaint@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "investigate",
+        "harassment",
+        "report",
+        "HR",
+        "confidential",
+        "serious"
+      ]
+    }
+  },
+  {
+    "id": "email_073",
+    "subject": "Payroll discrepancy this month",
+    "body": "My salary this month is $500 short compared to my contract. I believe overtime hours from last month were not included. Please review.",
+    "sender": "payroll.issue@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "payroll",
+        "salary",
+        "overtime",
+        "review",
+        "correct"
+      ]
+    }
+  },
+  {
+    "id": "email_074",
+    "subject": "Work from home policy question",
+    "body": "With the new hybrid policy, I'm confused about how many WFH days I'm allowed per week. My manager says 2 but the policy document says 3. Can you clarify?",
+    "sender": "wfh.question@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "WFH",
+        "policy",
+        "clarify",
+        "hybrid",
+        "days"
+      ]
+    }
+  },
+  {
+    "id": "email_075",
+    "subject": "Performance review appeal",
+    "body": "I received a 'below expectations' rating but my KPIs were all met or exceeded. I want to formally appeal this review with supporting documentation.",
+    "sender": "appeal@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "appeal",
+        "review",
+        "performance",
+        "KPI",
+        "documentation",
+        "process"
+      ]
+    }
+  },
+  {
+    "id": "email_076",
+    "subject": "Maternity leave planning",
+    "body": "I'm 5 months pregnant and need to understand my maternity leave entitlements, pay during leave, and how to formally notify the company.",
+    "sender": "maternity@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "maternity",
+        "leave",
+        "entitlement",
+        "pay",
+        "notify",
+        "process"
+      ]
+    }
+  },
+  {
+    "id": "email_077",
+    "subject": "Training budget approval",
+    "body": "I would like to attend an AWS certification course costing $800. Can this be covered by the professional development budget? My manager has given verbal approval.",
+    "sender": "training@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "training",
+        "budget",
+        "approval",
+        "development",
+        "reimbursement"
+      ]
+    }
+  },
+  {
+    "id": "email_078",
+    "subject": "Resignation letter",
+    "body": "Please accept this email as my formal resignation effective 30 days from today. I have enjoyed my time here and will ensure a smooth handover of my responsibilities.",
+    "sender": "resigning.employee@company.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "resignation",
+        "notice",
+        "acknowledge",
+        "offboarding",
+        "handover"
+      ]
+    }
+  },
+  {
+    "id": "email_079",
+    "subject": "Team building event feedback",
+    "body": "I wanted to share some feedback about last week's team building event. While the concept was good, the timing (9pm on a Friday) was not inclusive for employees with families.",
+    "sender": "feedback@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "feedback",
+        "event",
+        "inclusive",
+        "appreciate",
+        "note"
+      ]
+    }
+  },
+  {
+    "id": "email_080",
+    "subject": "Accommodation request for disability",
+    "body": "I have been diagnosed with a repetitive strain injury and need a standing desk and ergonomic keyboard. I have a doctor's letter. Please advise the process.",
+    "sender": "accommodation@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "accommodation",
+        "disability",
+        "equipment",
+        "process",
+        "doctor",
+        "support"
+      ]
+    }
+  },
+  {
+    "id": "email_081",
+    "subject": "Annual leave balance question",
+    "body": "My leave balance shows 5 days but I calculated I should have 12 days remaining. Can someone verify this? I'm planning a trip next month.",
+    "sender": "leave.balance@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "leave",
+        "balance",
+        "verify",
+        "days",
+        "check"
+      ]
+    }
+  },
+  {
+    "id": "email_082",
+    "subject": "Promotion discussion request",
+    "body": "I've been in my current role for 3 years and feel I'm ready for a senior position. I'd like to schedule a meeting to discuss the promotion process and timeline.",
+    "sender": "promotion.req@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "promotion",
+        "meeting",
+        "schedule",
+        "process",
+        "senior"
+      ]
+    }
+  },
+  {
+    "id": "email_083",
+    "subject": "Salary negotiation after competing offer",
+    "body": "I have received a competing job offer with 30% higher salary. Before deciding, I want to give the company an opportunity to match. Can we discuss?",
+    "sender": "salary.negotiation@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "salary",
+        "offer",
+        "retain",
+        "negotiate",
+        "high",
+        "discuss"
+      ]
+    }
+  },
+  {
+    "id": "email_084",
+    "subject": "Expense reimbursement delay",
+    "body": "I submitted my expense report 6 weeks ago for $1,200 in travel expenses. I still haven't been reimbursed. This is impacting my personal finances.",
+    "sender": "expense@employee.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "expense",
+        "reimbursement",
+        "delay",
+        "process",
+        "finance"
+      ]
+    }
+  },
+  {
+    "id": "email_085",
+    "subject": "New employee onboarding question",
+    "body": "I start next Monday and I'm wondering what I should bring on my first day, what time to arrive, and who I should ask for when I get to the office.",
+    "sender": "new.employee@gmail.com",
+    "ground_truth": {
+      "category": "hr",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "onboarding",
+        "first day",
+        "arrive",
+        "welcome",
+        "information"
+      ]
+    }
+  },
+  {
+    "id": "email_086",
+    "subject": "General product question",
+    "body": "Hi, I'm considering signing up but wanted to know if your product integrates with Microsoft Teams. I couldn't find this info on your website.",
+    "sender": "prospect@company.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "Teams",
+        "integration",
+        "yes",
+        "available",
+        "connect"
+      ]
+    }
+  },
+  {
+    "id": "email_087",
+    "subject": "Partnership proposal",
+    "body": "I represent a digital marketing agency with 50,000 followers. We'd love to discuss a partnership or affiliate program. Can we schedule a call this week?",
+    "sender": "partnerships@agency.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "partnership",
+        "affiliate",
+        "discuss",
+        "schedule",
+        "interest"
+      ]
+    }
+  },
+  {
+    "id": "email_088",
+    "subject": "Feature request: Dark mode",
+    "body": "Love the product! One request \u2014 can you add dark mode? I use this late at night and the bright white screen is hard on my eyes. Would really appreciate it.",
+    "sender": "feature.req@gmail.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "feature",
+        "dark mode",
+        "feedback",
+        "roadmap",
+        "thank"
+      ]
+    }
+  },
+  {
+    "id": "email_089",
+    "subject": "Media inquiry",
+    "body": "I'm a journalist at TechCrunch writing an article about productivity tools. I'd love to include your product. Can I speak with someone from your PR team?",
+    "sender": "journalist@techcrunch.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "media",
+        "PR",
+        "journalist",
+        "connect",
+        "interview"
+      ]
+    }
+  },
+  {
+    "id": "email_090",
+    "subject": "Accessibility concerns",
+    "body": "I'm visually impaired and use a screen reader. Several parts of your app are not accessible. I'd like to report specific issues and discuss improvements.",
+    "sender": "accessibility@user.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "accessibility",
+        "screen reader",
+        "important",
+        "address",
+        "report"
+      ]
+    }
+  },
+  {
+    "id": "email_091",
+    "subject": "Thank you for great support",
+    "body": "I just wanted to say thank you to your support team, especially Alex who helped me yesterday. The issue was resolved quickly and professionally. Excellent service!",
+    "sender": "happy.customer@gmail.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "thank",
+        "feedback",
+        "Alex",
+        "appreciated",
+        "share"
+      ]
+    }
+  },
+  {
+    "id": "email_092",
+    "subject": "Competitor comparison question",
+    "body": "How does your product compare to Competitor X? I'm evaluating both and trying to understand the key differences before making a decision.",
+    "sender": "evaluating@company.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "compare",
+        "features",
+        "difference",
+        "advantage",
+        "demo"
+      ]
+    }
+  },
+  {
+    "id": "email_093",
+    "subject": "Product demo request",
+    "body": "We are a team of 25 considering your enterprise plan. Can someone give us a product demo next week? We're particularly interested in the analytics features.",
+    "sender": "decision.maker@corp.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "demo",
+        "schedule",
+        "enterprise",
+        "analytics",
+        "team"
+      ]
+    }
+  },
+  {
+    "id": "email_094",
+    "subject": "Data privacy question",
+    "body": "Where is my data stored? Is it GDPR compliant? We are a European company and need to ensure compliance before we can use your service.",
+    "sender": "compliance@eu-company.de",
+    "ground_truth": {
+      "category": "general",
+      "priority": "high",
+      "action": "reply",
+      "response_requirements": [
+        "GDPR",
+        "data",
+        "compliant",
+        "Europe",
+        "storage",
+        "privacy"
+      ]
+    }
+  },
+  {
+    "id": "email_095",
+    "subject": "How to export my data",
+    "body": "I'd like to export all my data before my subscription expires next week. Is there a way to download everything including history and settings?",
+    "sender": "export.data@user.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "export",
+        "data",
+        "download",
+        "settings",
+        "history"
+      ]
+    }
+  },
+  {
+    "id": "email_096",
+    "subject": "Open source contribution question",
+    "body": "Is any part of your product open source? I'm a developer and would love to contribute or build plugins. Is there a public API or SDK available?",
+    "sender": "oss.dev@github.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "open source",
+        "API",
+        "SDK",
+        "plugin",
+        "developer",
+        "documentation"
+      ]
+    }
+  },
+  {
+    "id": "email_097",
+    "subject": "Suggestion: Better onboarding",
+    "body": "As a new user I found onboarding confusing. There was no tutorial or guide. I spent 2 hours figuring out basic features. Please consider adding an interactive tutorial.",
+    "sender": "new.confused@user.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "medium",
+      "action": "reply",
+      "response_requirements": [
+        "onboarding",
+        "tutorial",
+        "feedback",
+        "improve",
+        "thank"
+      ]
+    }
+  },
+  {
+    "id": "email_098",
+    "subject": "Translation/localization request",
+    "body": "Do you plan to add Portuguese (Brazilian) support? I have a large audience in Brazil who would love to use your product but the language barrier is a problem.",
+    "sender": "brazil.user@gmail.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "Portuguese",
+        "localization",
+        "Brazil",
+        "roadmap",
+        "language"
+      ]
+    }
+  },
+  {
+    "id": "email_099",
+    "subject": "Security vulnerability report",
+    "body": "I am a security researcher and found a potential XSS vulnerability on your login page. I am disclosing responsibly. Please contact me to share technical details.",
+    "sender": "security.researcher@proton.com",
+    "ground_truth": {
+      "category": "general",
+      "priority": "high",
+      "action": "escalate",
+      "response_requirements": [
+        "security",
+        "vulnerability",
+        "high",
+        "team",
+        "contact",
+        "responsible"
+      ]
+    }
+  },
+  {
+    "id": "email_100",
+    "subject": "Annual conference sponsorship",
+    "body": "We are organizing an annual tech conference expecting 2000 attendees. We are looking for sponsors at various tiers. Would your company be interested?",
+    "sender": "events@techconference.org",
+    "ground_truth": {
+      "category": "general",
+      "priority": "low",
+      "action": "reply",
+      "response_requirements": [
+        "sponsorship",
+        "conference",
+        "marketing",
+        "interested",
+        "discuss"
+      ]
+    }
+  },
+  {
+  "id": "email_101",
+  "subject": "Payment issue and login problem",
+  "body": "My payment failed and now I can't log into my account. Not sure if they are related but this is high.",
+  "sender": "confused.user@gmail.com",
+  "ground_truth": {
+    "category": "billing",
+    "priority": "high",
+    "action": "reply",
+    "response_requirements": ["payment", "login", "investigate", "help"]
+  }
+},
+{
+  "id": "email_102",
+  "subject": "App slow and incorrect billing",
+  "body": "The app has been very slow lately and I also noticed extra charges this month. Please check both.",
+  "sender": "multi.issue@gmail.com",
+  "ground_truth": {
+    "category": "billing",
+    "priority": "high",
+    "action": "reply",
+    "response_requirements": ["charge", "slow", "investigate", "resolve"]
+  }
+},
+{
+  "id": "email_103",
+  "subject": "Account locked after payment attempt",
+  "body": "I tried to make a payment and now my account is locked. Is this a bug or security issue?",
+  "sender": "locked.user@gmail.com",
+  "ground_truth": {
+    "category": "technical",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["account", "locked", "verify", "investigate"]
+  }
+},
+{
+  "id": "email_104",
+  "subject": "Refund request but also feature issue",
+  "body": "I want a refund because the feature I paid for doesn't work properly.",
+  "sender": "refund.issue@gmail.com",
+  "ground_truth": {
+    "category": "billing",
+    "priority": "high",
+    "action": "reply",
+    "response_requirements": ["refund", "feature", "issue", "resolve"]
+  }
+},
+{
+  "id": "email_105",
+  "subject": "Multiple problems with account",
+  "body": "My account shows wrong data, billing is incorrect, and app crashes sometimes. Very disappointed.",
+  "sender": "frustrated.user@gmail.com",
+  "ground_truth": {
+    "category": "technical",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["account", "bug", "investigate", "fix"]
+  }
+},
+{
+  "id": "email_106",
+  "subject": "Possible data breach",
+  "body": "I noticed unknown login attempts from another country. Is my account compromised?",
+  "sender": "security.alert@gmail.com",
+  "ground_truth": {
+    "category": "technical",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["security", "account", "verify", "protect"]
+  }
+},
+{
+  "id": "email_107",
+  "subject": "Phishing email received",
+  "body": "I received an email pretending to be your company asking for my password. Is this legitimate?",
+  "sender": "user.safe@gmail.com",
+  "ground_truth": {
+    "category": "general",
+    "priority": "high",
+    "action": "reply",
+    "response_requirements": ["phishing", "not legitimate", "security", "warn"]
+  }
+},
+{
+  "id": "email_108",
+  "subject": "Unauthorized access detected",
+  "body": "There are actions in my account that I did not perform. Please check immediately.",
+  "sender": "hacked.user@gmail.com",
+  "ground_truth": {
+    "category": "technical",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["unauthorized", "security", "investigate", "high"]
+  }
+},
+{
+  "id": "email_109",
+  "subject": "This is unacceptable service",
+  "body": "I have contacted support 3 times and still no resolution. This is the worst service I have ever experienced.",
+  "sender": "angry.customer@gmail.com",
+  "ground_truth": {
+    "category": "general",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["apologize", "resolve", "priority", "support"]
+  }
+},
+{
+  "id": "email_110",
+  "subject": "Very frustrated with your app",
+  "body": "Your app keeps crashing and nobody is fixing it. I am seriously considering cancelling.",
+  "sender": "frustrated.user@gmail.com",
+  "ground_truth": {
+    "category": "technical",
+    "priority": "high",
+    "action": "reply",
+    "response_requirements": ["apologize", "fix", "investigate", "support"]
+  }
+},
+{
+  "id": "email_111",
+  "subject": "Refund me now!",
+  "body": "I want my money back immediately. This product is useless and doesn't work as promised.",
+  "sender": "furious.user@gmail.com",
+  "ground_truth": {
+    "category": "billing",
+    "priority": "high",
+    "action": "escalate",
+    "response_requirements": ["refund", "apologize", "resolve", "issue"]
+  }
+}
+]

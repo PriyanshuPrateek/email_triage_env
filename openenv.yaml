@@ -1,0 +1,21 @@
+name: email-triage-env
+description: Real-world email triage environment for RL agents
+
+entrypoint: server.app:app
+
+endpoints:
+  reset: /reset
+  step: /step
+  tasks: /tasks
+  grader: /grader
+  baseline: /baseline
+
+tasks:
+  - name: easy
+    description: classify email category
+
+  - name: medium
+    description: classify and prioritize email
+
+  - name: hard
+    description: full email handling task
